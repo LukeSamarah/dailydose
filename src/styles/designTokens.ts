@@ -1,4 +1,4 @@
-Ni// Design Tokens für konsistente Styling-Werte
+// Design Tokens für konsistente Styling-Werte
 export const designTokens = {
   spacing: {
     sectionPadding: 'py-32',
