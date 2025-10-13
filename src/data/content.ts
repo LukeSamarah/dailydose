@@ -22,11 +22,10 @@ export const content = {
         backgroundColor: "gray" as const
       },
       {
-        type: "imageText",
+        type: "customVideo",
         title: "Innovative Lösungen",
         content: "Mit modernsten Technologien und bewährten Methoden entwickeln wir Lösungen, die Ihr Unternehmen voranbringen.\n\nUnsere Expertise umfasst verschiedene Bereiche, von der strategischen Planung bis zur praktischen Umsetzung.",
-        imagePosition: "right" as const,
-        backgroundColor: "white" as const
+        backgroundColor: "gray" as const
       }
     ]
   },

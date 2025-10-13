@@ -17,16 +17,16 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white/95 backdrop-blur-md shadow-lg border-b border-orange-100 sticky top-0 z-50 transition-all duration-300">
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="flex w-full items-center justify-between py-2">
+    <header className="bg-white/95 backdrop-blur-md shadow-lg border-b border-orange-100 sticky top-0 z-50 transition-all duration-300 h-20">
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-full" aria-label="Top">
+        <div className="flex w-full items-center justify-between h-full">
           <div className="flex items-center">
             <Link href="/">
               <Image
-                src="/Logo_einzeilige Unterzeile.png"
+                src="/LogoHeader.png"
                 alt="Daily Dose Logo"
                 width={150}
-                height={50}
+                height={30}
                 className="h-auto"
               />
             </Link>

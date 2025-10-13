@@ -83,7 +83,7 @@ export default function HeroSection({
               filter: 'brightness(0.7) contrast(1.1) saturate(1.1)'
             }}
           >
-            <source src="/webm/coverr-a-female-video-editor-is-checking-her-social-media-5063-1080p.webm" type="video/webm" />
+            <source src="/Webm/copy_F189B18E-367C-43A0-A1D9-86F9FCB98831.webm" type="video/webm" />
           </video>
           
           {/* Mobile Overlay */}
@@ -164,7 +164,7 @@ export default function HeroSection({
       
       {/* LEFT HALF - Video */}
       <motion.div 
-        className="relative w-1/2 h-full overflow-hidden"
+        className="relative w-full h-full overflow-hidden"
         initial={{ x: -100, opacity: 0 }}
         animate={isInView ? { x: 0, opacity: 1 } : {}}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -180,7 +180,7 @@ export default function HeroSection({
             filter: 'brightness(0.8) contrast(1.1) saturate(1.2)'
           }}
         >
-          <source src="/webm/coverr-a-female-video-editor-is-checking-her-social-media-5063-1080p.webm" type="video/webm" />
+          <source src="/Webm/copy_F189B18E-367C-43A0-A1D9-86F9FCB98831.webm" type="video/webm" />
         </video>
         
         {/* Subtle Video Overlay */}
@@ -191,134 +191,30 @@ export default function HeroSection({
           }}
         />
         
-        {/* Elegant Border */}
-        <div className="absolute top-0 right-0 w-px h-full bg-gradient-to-b from-transparent via-white/20 to-transparent" />
-      </motion.div>
-
-      {/* RIGHT HALF - Text Content */}
-      <motion.div 
-        className="relative w-1/2 h-full flex items-center justify-center"
-        style={{
-          background: `
-            linear-gradient(135deg, 
-              rgba(242, 234, 229, 0.3) 0%, 
-              rgba(255, 255, 255, 0.9) 50%, 
-              rgba(203, 174, 165, 0.2) 100%
-            )
-          `
-        }}
-        initial={{ x: 100, opacity: 0 }}
-        animate={isInView ? { x: 0, opacity: 1 } : {}}
-        transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-      >
-        {/* Background Pattern */}
-        <div 
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: `
-              radial-gradient(circle at 25% 25%, rgba(232, 137, 6, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 75% 75%, rgba(203, 174, 165, 0.1) 0%, transparent 50%)
-            `
-          }}
-        />
-
-        {/* Content Container */}
-        <div className="relative z-10 max-w-2xl px-12 xl:px-16 -mt-48">
-          
-          {/* Logo */}
-          <motion.div
-            className="mb-3 flex justify-start"
-            initial={{ opacity: 0, y: 50 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.5, duration: 0.8 }}
-          >
-            <Image
-              src="/Logo_zweizeilige Unterzeile.png"
-              alt="Daily Dose of Content Logo"
-              width={350}
-              height={140}
-              className="h-auto max-w-full"
-              priority
-            />
-          </motion.div>
-
-          {/* Subtitle */}
-          <motion.h2 
-            className="text-xl xl:text-2xl font-medium text-brand-primary mb-4 leading-relaxed"
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 1.5, duration: 0.8 }}
-          >
-            {subtitle}
-          </motion.h2>
-
-          {/* Description */}
-          <motion.p 
-            className="text-lg xl:text-xl text-gray-700 mb-6 leading-relaxed"
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 2, duration: 0.8 }}
-          >
-            {description}
-          </motion.p>
-
-          {/* CTA Buttons */}
-          <motion.div 
-            className="flex flex-col xl:flex-row gap-4"
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 2.5, duration: 0.8 }}
-          >
-            {primaryButton && (
-              <motion.div
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.98 }}
-                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              >
-                <Link
-                  href={primaryButton.href}
-                  className="inline-flex items-center justify-center px-10 py-4 text-xl font-bold text-white bg-brand-primary rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 group"
-                  style={{
-                    background: 'linear-gradient(135deg, #e8890f 0%, #d17a0a 100%)',
-                    boxShadow: '0 10px 30px rgba(232, 137, 6, 0.3)'
-                  }}
-                >
-                  <span className="mr-3">{primaryButton.text}</span>
-                  <motion.span
-                    className="text-2xl"
-                    animate={{ x: [0, 5, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity }}
-                  >
-                    →
-                  </motion.span>
-                </Link>
-              </motion.div>
-            )}
-            
-            {secondaryButton && (
-              <motion.div
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.98 }}
-                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              >
-                <Link
-                  href={secondaryButton.href}
-                  className="inline-flex items-center justify-center px-10 py-4 text-xl font-bold text-brand-black bg-white/80 backdrop-blur-md rounded-2xl shadow-xl hover:shadow-2xl hover:bg-white/90 transition-all duration-300 group border border-gray-200"
-                >
-                  <span className="mr-3">{secondaryButton.text}</span>
-                  <motion.span
-                    className="text-xl"
-                    animate={{ rotate: [0, 10, 0] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                  >
-                    ✨
-                  </motion.span>
-                </Link>
-              </motion.div>
-            )}
-          </motion.div>
+        
+        {/* Text Overlay */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center text-white z-10">
+            <motion.h1 
+              className="text-4xl md:text-6xl font-bold mb-4"
+              initial={{ opacity: 0, y: 50 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
+              Wir kümmern uns um Ihr Social Media,
+            </motion.h1>
+            <motion.h2 
+              className="text-3xl md:text-5xl font-light"
+              initial={{ opacity: 0, y: 50 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.8, duration: 0.8 }}
+            >
+              damit Sie es nicht müssen.
+            </motion.h2>
+          </div>
         </div>
       </motion.div>
+
     </div>
   )
 }
