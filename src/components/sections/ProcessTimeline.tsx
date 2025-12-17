@@ -1,7 +1,7 @@
 'use client'
 
-import { motion, useScroll, useTransform, useSpring, useInView, useMotionValue, useMotionTemplate } from 'framer-motion'
-import { useEffect, useRef, useState } from 'react'
+import { motion, useScroll, useTransform, useSpring, useInView, useMotionTemplate } from 'framer-motion'
+import { useRef } from 'react'
 
 interface ProcessStep {
   id: number
@@ -28,8 +28,6 @@ const MagneticCard = ({
   isInView: boolean
 }) => {
   const cardRef = useRef<HTMLDivElement>(null)
-  const mouseX = useMotionValue(0)
-  const mouseY = useMotionValue(0)
   const rotateX = useSpring(0, { stiffness: 300, damping: 30 })
   const rotateY = useSpring(0, { stiffness: 300, damping: 30 })
   const scale = useSpring(1, { stiffness: 300, damping: 30 })

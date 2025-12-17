@@ -47,7 +47,7 @@ export default function ImageTextSection({
                 <div className="mt-8">
                   <a
                     href={button.href}
-                    className="inline-flex items-center rounded-md bg-brand-primary px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-primary/90 transition-colors duration-200"
+                    className="inline-flex items-center rounded-md bg-[#e88906] px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#e88906]/90 transition-colors duration-200"
                   >
                     {button.text}
                   </a>
@@ -72,56 +72,20 @@ export default function ImageTextSection({
                   </div>
                 </div>
               ) : images && images.length > 0 ? (
-                images.length === 1 ? (
-                  <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">
-                    <Image
-                      src={images[0]}
-                      alt="Daily Dose of Content"
-                      width={500}
-                      height={500}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                ) : (
-                  <div className="grid grid-cols-2 gap-4">
-                    {images.map((image, index) => (
-                      <div key={index} className="aspect-square rounded-xl overflow-hidden shadow-lg">
-                        <Image
-                          src={image}
-                          alt={`Daily Dose of Content ${index + 1}`}
-                          width={250}
-                          height={250}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                )
+                <div className="border-4 border-[#e88906]/20 rounded-2xl overflow-hidden shadow-xl bg-white p-4">
+                  <Image
+                    src={images[0]}
+                    alt="Daily Dose of Content"
+                    width={500}
+                    height={500}
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
+                </div>
               ) : (
-                <div className="relative max-w-sm mx-auto">
-                  {/* iPhone 15 Pro Mockup im Querformat */}
-                  <div className="relative scale-75 md:scale-90">
-                    {/* Outer iPhone Frame - Titan Effect */}
-                    <div className="relative bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 rounded-[60px] p-2 shadow-2xl">
-                      {/* Inner Frame - Black Bezel */}
-                      <div className="relative bg-black rounded-[52px] p-2 overflow-hidden">
-                        {/* Dynamic Island */}
-                        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-32 h-9 bg-black rounded-full z-10"></div>
-
-                        {/* iPhone Screen - passend im Rahmen */}
-                        <div className="relative bg-white rounded-[48px] w-[390px] h-[844px] mx-auto overflow-hidden">
-                        </div>
-                        
-                        {/* Side Buttons */}
-                        <div className="absolute -left-1 top-20 w-1 h-12 bg-gray-400 rounded-r"></div>
-                        <div className="absolute -left-1 top-36 w-1 h-8 bg-gray-400 rounded-r"></div>
-                        <div className="absolute -left-1 top-48 w-1 h-8 bg-gray-400 rounded-r"></div>
-                        <div className="absolute -right-1 top-32 w-1 h-20 bg-gray-400 rounded-l"></div>
-                      </div>
-                      
-                      {/* Realistic Shadow */}
-                      <div className="absolute inset-0 rounded-[55px] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] pointer-events-none"></div>
-                    </div>
+                <div className="border-4 border-dashed border-gray-300 rounded-2xl bg-gray-50 p-8 flex items-center justify-center min-h-[300px]">
+                  <div className="text-center text-gray-400">
+                    <div className="text-4xl mb-2">📷</div>
+                    <p className="text-sm">Bild wird geladen...</p>
                   </div>
                 </div>
               )}

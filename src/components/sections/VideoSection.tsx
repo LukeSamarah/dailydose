@@ -12,26 +12,11 @@ export default function VideoSection({
   const bgClass = backgroundColor === 'gray' ? 'bg-gray-50' : 'bg-white'
 
   return (
-    <div className={`${bgClass} py-24 sm:py-32`}>
+    <div className={`${bgClass} py-12 sm:py-16 lg:py-24 xl:py-32`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text links */}
-          <div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl font-canto-bold">
-              {title}
-            </h2>
-            <div className="mt-8 text-base leading-7 text-gray-600 space-y-4 sm:text-lg sm:leading-8 font-muli">
-              {content.split('\n\n').map((paragraph, index) => {
-                const formattedParagraph = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-                return (
-                  <p key={index} dangerouslySetInnerHTML={{ __html: formattedParagraph }} />
-                );
-              })}
-            </div>
-          </div>
-          
-          {/* iPhone 15 Pro Mockup rechts */}
-          <div className="flex justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+          {/* iPhone 15 Pro Mockup links */}
+          <div className="flex justify-center order-2 lg:order-1">
             <div className="relative">
               {/* iPhone im Querformat */}
               <div className="relative scale-75 md:scale-90">
@@ -73,6 +58,21 @@ export default function VideoSection({
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          
+          {/* Text rechts */}
+          <div className="order-1 lg:order-2">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl font-canto-bold">
+              {title}
+            </h2>
+            <div className="mt-8 text-base leading-7 text-gray-600 space-y-4 sm:text-lg sm:leading-8 font-muli">
+              {content.split('\n\n').map((paragraph, index) => {
+                const formattedParagraph = paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                return (
+                  <p key={index} dangerouslySetInnerHTML={{ __html: formattedParagraph }} />
+                );
+              })}
             </div>
           </div>
         </div>

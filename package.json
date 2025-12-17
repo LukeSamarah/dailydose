@@ -9,10 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@next/swc-darwin-arm64": "^16.0.10",
     "framer-motion": "^12.23.12",
-    "next": "15.5.3",
+    "lucide-react": "^0.545.0",
+    "next": "^15.5.9",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "resend": "^6.4.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

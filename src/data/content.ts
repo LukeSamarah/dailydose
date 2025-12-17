@@ -15,17 +15,43 @@ export const content = {
     },
     sections: [
       {
-        type: "text",
-        title: "Warum Daily Dose?",
-        content: "Wir verstehen, dass jedes Unternehmen einzigartig ist. Deshalb bieten wir maßgeschneiderte Lösungen, die speziell auf Ihre Bedürfnisse zugeschnitten sind.\n\nUnser erfahrenes Team arbeitet eng mit Ihnen zusammen, um nachhaltige Ergebnisse zu erzielen und Ihr Unternehmen zum Erfolg zu führen.",
-        centered: true,
+        type: "warumDDoC",
+        title: "Warum Daily Dose of Content?",
+        content: "Wir kümmern uns um Ihren kompletten Social-Media-Auftritt, von der Idee bis zum Posting.\n\nKeine Zeit für Social Media? Kein Problem. Wir entwickeln kreative Content-Ideen, produzieren professionelle Videos und übernehmen auch das Posten für Sie. So bleibt Ihr Unternehmen dauerhaft sichtbar, ohne dass Sie sich selbst darum kümmern müssen.",
+        backgroundColor: "white" as const
+      },
+      {
+        type: "clientLogos",
+        title: "Diese Unternehmen haben uns bereits ihr Vertrauen geschenkt",
         backgroundColor: "gray" as const
       },
+      {
+        type: "servicesOverview",
+        title: "Unsere Leistungen",
+        backgroundColor: "white" as const
+      },
+      {
+        type: "grafiken",
+        title: "Professionelle Grafikerstellung",
+        backgroundColor: "white" as const
+      },
+      // {
+      //   type: "imageText",
+      //   title: "Warum Daily Dose of Content?",
+      //   content: "Wir kümmern uns um Ihren kompletten Social-Media-Auftritt, von der Idee bis zum Posting.\n\nKeine Zeit für Social Media? Kein Problem. Wir entwickeln kreative Content-Ideen, produzieren professionelle Videos und übernehmen auch das Posten für Sie. So bleibt Ihr Unternehmen dauerhaft sichtbar, ohne dass Sie sich selbst darum kümmern müssen.",
+      //   imagePosition: "left" as const,
+      //   backgroundColor: "gray" as const,
+      //   images: ["/MULaptop.png"]
+      // },
       {
         type: "customVideo",
         title: "Innovative Lösungen",
         content: "Mit modernsten Technologien und bewährten Methoden entwickeln wir Lösungen, die Ihr Unternehmen voranbringen.\n\nUnsere Expertise umfasst verschiedene Bereiche, von der strategischen Planung bis zur praktischen Umsetzung.",
         backgroundColor: "gray" as const
+      },
+      {
+        type: "contactCTA",
+        backgroundColor: "white" as const
       }
     ]
   },
@@ -116,23 +142,25 @@ export const content = {
   ueberUns: {
     hero: {
       title: "Lernen Sie uns kennen.",
-      content: "Ich bin Amelie Klein, Gründerin von Daily Dose of Content. Mein Team und ich haben es uns zur Aufgabe gemacht Mittelständischen Unternehmen eine Sichtbarkeit auf den Sozialen Medien zu schaffen.",
+      content: "Ich bin Amelie Klein, 20 Jahre alt, und studiere Sales & Marketing an der Hochschule Niederrhein in Mönchengladbach.\n\nIm Sommer 2024 habe ich Daily Dose of Content gegründet, mit einer klaren Vision: Unternehmen den Social-Media-Auftritt so einfach wie möglich zu machen und ihnen dadurch mehr Sichtbarkeit auf den sozialen Medien zu verschaffen.",
       image: "/24-07 - JR Consulting GmbH - Fotos CEO - Studio-5499 2.JPG",
       imagePosition: "left" as const
     },
     sections: [
       {
-        type: "text",
+        type: "imageText",
         title: "Unser Leitbild",
-        content: "Soziale Medien sind heute unverzichtbar - sowohl im privaten als auch im geschäftlichen Bereich.\nDennoch fehlt es vielen Unternehmen im Alltag an Zeit, Know-how oder Ressourcen, um ihren Social Media Auftritt strategisch und konsequent umzusetzen. Oft bleibt das Thema auf der Strecke - oder es werden hohe Summen in Agenturen investiert, ohne das messbare Ergebnisse erzielt werden.\n\n**Genau hier setzten wir an**\n\nBei Daily Dose of Content übernehmen wir nicht nur die komplette social media Betreuung - wir schaffen echten Mehrwert. Mit klarer Strategie, professionellem Content und kreativem ideen sorgen wir dafür, dass Ihre Marke sichtbar wird, Vertrauen aufbaut und langfristig wächst.\n\n**Effizient, individuell und mit spürbaren Ergebnis.**",
-        backgroundColor: "white" as const
+        content: "Soziale Medien sind heute unverzichtbar - sowohl im privaten als auch im geschäftlichen Bereich.\nDennoch fehlt es vielen Unternehmen im Alltag an Zeit, Know-how oder Ressourcen, um ihren Social Media Auftritt strategisch und konsequent umzusetzen. Oft bleibt das Thema auf der Strecke - oder es werden hohe Summen in Agenturen investiert, ohne das messbare Ergebnisse erzielt werden.\n\n**Genau hier setzen wir an**\n\nBei Daily Dose of Content übernehmen wir nicht nur die komplette social media Betreuung - wir schaffen echten Mehrwert. Mit klarer Strategie, professionellem Content und kreativen Ideen sorgen wir dafür, dass Ihre Marke sichtbar wird, Vertrauen aufbaut und langfristig wächst.\n\n**Effizient, individuell und mit spürbaren Ergebnissen.**",
+        imagePosition: "left" as const,
+        backgroundColor: "gray" as const,
+        images: ["täglichedosiscontent.png"]
       },
       {
         type: "imageText",
         title: "Unsere Vision",
         content: "Unternehmen sollen sich keine Gedanken mehr über Social Media machen müssen - wir übernehmen alles. Schnell, effizient und professionell sorgen wir für einen starken Auftritt, während unsere Kund:innen sich voll auf ihr Kerngeschäft konzentrieren können.",
         imagePosition: "right" as const,
-        backgroundColor: "gray" as const,
+        backgroundColor: "white" as const,
         images: ["/IMG_7732 2.JPG"],
         button: {
           text: "Kontakt aufnehmen",
@@ -143,6 +171,6 @@ export const content = {
   },
   kontakt: {
     title: "Kontakt",
-    content: "Haben Sie Fragen oder möchten Sie mehr über unsere Dienstleistungen erfahren?\n\nWir freuen uns darauf, von Ihnen zu hören und gemeinsam zu besprechen, wie wir Ihnen helfen können.\n\nKontaktieren Sie uns noch heute für ein unverbindliches Beratungsgespräch.\n\nE-Mail: info@dailydose.de\nTelefon: +49 123 456 789"
+    content: "Haben Sie Fragen oder möchten Sie mehr über unsere Dienstleistungen erfahren?\n\nWir freuen uns darauf, von Ihnen zu hören und gemeinsam zu besprechen, wie wir Ihnen helfen können.\n\nKontaktieren Sie uns noch heute für ein unverbindliches Beratungsgespräch.\n\nE-Mail: klein@dailydoseofcontent.de\nTelefon: +49 157 58774195"
   }
 }

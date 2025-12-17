@@ -19,7 +19,7 @@ export default function ServiceCards({ services }: ServiceCardsProps) {
   const cardsRef = useRef<(HTMLDivElement | null)[]>([])
   const [scrollY, setScrollY] = useState(0)
   const [isVisible, setIsVisible] = useState<boolean[]>(new Array(services.length).fill(false))
-  const rafRef = useRef<number>()
+  const rafRef = useRef<number | null>(null)
 
   const handleScroll = useCallback(() => {
     if (rafRef.current) {
@@ -63,7 +63,7 @@ export default function ServiceCards({ services }: ServiceCardsProps) {
         cancelAnimationFrame(rafRef.current)
       }
     }
-  }, [])
+  }, [handleScroll])
 
   return (
     <div ref={containerRef} className="min-h-screen py-32 bg-gradient-to-br from-brand-tertiary via-brand-secondary/20 to-brand-tertiary relative overflow-hidden">
@@ -92,9 +92,9 @@ export default function ServiceCards({ services }: ServiceCardsProps) {
             100% { transform: translate3d(0px, 0px, 0) scale(1); }
           }
           @keyframes driftUp {
-            0% { transform: translate3d(0px, 0px, 0) opacity: 0.4; }
-            50% { transform: translate3d(20px, -50px, 0) opacity: 0.8; }
-            100% { transform: translate3d(-15px, -100px, 0) opacity: 0.2; }
+            0% { transform: translate3d(0px, 0px, 0); opacity: 0.4; }
+            50% { transform: translate3d(20px, -50px, 0); opacity: 0.8; }
+            100% { transform: translate3d(-15px, -100px, 0); opacity: 0.2; }
           }
           @keyframes driftSide {
             0% { transform: translate3d(0px, 0px, 0); }
@@ -214,7 +214,7 @@ export default function ServiceCards({ services }: ServiceCardsProps) {
             return (
               <div
                 key={service.id}
-                ref={el => cardsRef.current[index] = el}
+                ref={(el) => { cardsRef.current[index] = el }}
                 className={`flex flex-col lg:flex-row items-center gap-16 lg:gap-24 ${
                   !isEven ? 'lg:flex-row-reverse' : ''
                 } transition-all duration-1000 ease-[cubic-bezier(0.4,0,0.2,1)] ${

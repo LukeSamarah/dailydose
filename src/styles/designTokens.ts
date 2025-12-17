@@ -13,7 +13,7 @@ export const designTokens = {
     logo: 'font-canto-bold text-2xl lg:text-3xl font-bold tracking-wide uppercase',
     
     // Headlines - Canto Semibold, Versalien  
-    heroTitle: 'font-canto-semibold text-5xl lg:text-7xl font-semibold tracking-wide uppercase',
+    heroTitle: 'font-canto-semibold text-5xl lg:text-7xl font<-semibold tracking-wide uppercase',
     heroSubtitle: 'font-canto-semibold text-xl lg:text-2xl font-semibold opacity-90 uppercase',
     sectionTitle: 'font-canto-semibold text-4xl lg:text-6xl font-semibold tracking-[0.2em] uppercase',
     subsectionTitle: 'font-canto-semibold text-3xl lg:text-5xl font-semibold tracking-[0.15em] uppercase',
