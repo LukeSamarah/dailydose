@@ -46,7 +46,7 @@ export default function VideoSection({
                         loop
                         playsInline
                       >
-                        <source src="/Webm/website video.webm" type="video/webm" />
+                        <source src="/webm/website video.webm" type="video/webm" />
                       </video>
                     </div>
                     

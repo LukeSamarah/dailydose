@@ -10,7 +10,7 @@ export default function VideoHeroSection() {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/Webm/copy_F189B18E-367C-43A0-A1D9-86F9FCB98831.webm" type="video/webm" />
+        <source src="/webm/copy_F189B18E-367C-43A0-A1D9-86F9FCB98831.webm" type="video/webm" />
       </video>
       
       <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
