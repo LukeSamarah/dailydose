@@ -1,7 +1,17 @@
 {
   "name": "dailydoseofcontent",
   "version": "0.1.0",
-  "optionalDependencies": {},
+  "optionalDependencies": {
+    "@next/swc-darwin-arm64": "16.0.10",
+    "@next/swc-darwin-x64": "16.0.10",
+    "@next/swc-linux-arm64-gnu": "16.0.10",
+    "@next/swc-linux-arm64-musl": "16.0.10",
+    "@next/swc-linux-x64-gnu": "16.0.10",
+    "@next/swc-linux-x64-musl": "16.0.10",
+    "@next/swc-win32-arm64-msvc": "16.0.10",
+    "@next/swc-win32-ia32-msvc": "16.0.10",
+    "@next/swc-win32-x64-msvc": "16.0.10"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
