@@ -52,23 +52,7 @@ export default function Footer() {
                 </ul>
               </div>
               {/* Mobile: Kontakt second, Desktop: Mehr second */}
-              <div className="mt-12 md:mt-0 md:hidden xl:block">
-                <h3 className="text-lg font-semibold text-black mb-6">Mehr</h3>
-                <ul role="list" className="space-y-4">
-                  {navigation.slice(3).map((item) => (
-                    <li key={item.name}>
-                      <Link
-                        href={item.href}
-                        className="text-base text-black/70 hover:text-[#e88906] transition-colors duration-200 hover:underline"
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              {/* Only visible on md screens, hidden on xl */}
-              <div className="mt-12 md:mt-0 hidden md:block xl:hidden">
+              <div className="mt-12 md:mt-0 md:hidden">
                 <h3 className="text-lg font-semibold text-black mb-6">Kontakt</h3>
                 <ul role="list" className="space-y-4">
                   <li>
@@ -92,6 +76,22 @@ export default function Footer() {
                       Montag - Freitag: 9:00 - 18:00 Uhr
                     </span>
                   </li>
+                </ul>
+              </div>
+              {/* Desktop: Mehr second */}
+              <div className="mt-12 md:mt-0 hidden md:block xl:block">
+                <h3 className="text-lg font-semibold text-black mb-6">Mehr</h3>
+                <ul role="list" className="space-y-4">
+                  {navigation.slice(3).map((item) => (
+                    <li key={item.name}>
+                      <Link
+                        href={item.href}
+                        className="text-base text-black/70 hover:text-[#e88906] transition-colors duration-200 hover:underline"
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
