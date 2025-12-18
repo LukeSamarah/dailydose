@@ -34,7 +34,8 @@ export default function Footer() {
           
           {/* Navigation Links */}
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+            {/* Mobile: Navigation first, Desktop: Navigation first */}
+            <div className="md:grid md:grid-cols-2 md:gap-8 xl:order-1">
               <div>
                 <h3 className="text-lg font-semibold text-black mb-6">Navigation</h3>
                 <ul role="list" className="space-y-4">
@@ -50,7 +51,24 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-12 md:mt-0">
+              {/* Mobile: Kontakt second, Desktop: Mehr second */}
+              <div className="mt-12 md:mt-0 md:hidden xl:block">
+                <h3 className="text-lg font-semibold text-black mb-6">Mehr</h3>
+                <ul role="list" className="space-y-4">
+                  {navigation.slice(3).map((item) => (
+                    <li key={item.name}>
+                      <Link
+                        href={item.href}
+                        className="text-base text-black/70 hover:text-[#e88906] transition-colors duration-200 hover:underline"
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {/* Only visible on md screens, hidden on xl */}
+              <div className="mt-12 md:mt-0 hidden md:block xl:hidden">
                 <h3 className="text-lg font-semibold text-black mb-6">Kontakt</h3>
                 <ul role="list" className="space-y-4">
                   <li>
@@ -78,9 +96,10 @@ export default function Footer() {
               </div>
             </div>
             
-            {/* Mehr Section */}
-            <div className="md:grid md:grid-cols-1 md:gap-8">
-              <div>
+            {/* Desktop: Kontakt third, Mobile: Mehr second */}
+            <div className="md:grid md:grid-cols-1 md:gap-8 xl:order-2">
+              {/* Mobile: Mehr section */}
+              <div className="md:hidden">
                 <h3 className="text-lg font-semibold text-black mb-6">Mehr</h3>
                 <ul role="list" className="space-y-4">
                   {navigation.slice(3).map((item) => (
@@ -93,6 +112,33 @@ export default function Footer() {
                       </Link>
                     </li>
                   ))}
+                </ul>
+              </div>
+              {/* Desktop: Kontakt section */}
+              <div className="hidden xl:block">
+                <h3 className="text-lg font-semibold text-black mb-6">Kontakt</h3>
+                <ul role="list" className="space-y-4">
+                  <li>
+                    <a 
+                      href="mailto:klein@dailydoseofcontent.de"
+                      className="text-base text-black/70 hover:text-[#e88906] transition-colors duration-200"
+                    >
+                      klein@dailydoseofcontent.de
+                    </a>
+                  </li>
+                  <li>
+                    <a 
+                      href="tel:+4915758774195"
+                      className="text-base text-black/70 hover:text-[#e88906] transition-colors duration-200"
+                    >
+                      +49 157 58774195
+                    </a>
+                  </li>
+                  <li className="pt-2">
+                    <span className="text-sm text-black/60">
+                      Montag - Freitag: 9:00 - 18:00 Uhr
+                    </span>
+                  </li>
                 </ul>
               </div>
             </div>

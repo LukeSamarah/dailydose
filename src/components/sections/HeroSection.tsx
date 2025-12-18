@@ -116,7 +116,7 @@ export default function HeroSection() {
             filter: 'brightness(0.8) contrast(1.1) saturate(1.2)'
           }}
         >
-          <source src="/Webm/copy_F189B18E-367C-43A0-A1D9-86F9FCB98831.webm" type="video/webm" />
+          <source src="/webm/copy_F189B18E-367C-43A0-A1D9-86F9FCB98831.webm" type="video/webm" />
         </video>
         
         {/* Subtle Video Overlay */}

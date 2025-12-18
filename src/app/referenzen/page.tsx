@@ -35,7 +35,7 @@ const clientLogos = [
   { name: "ISOTEC", logo: "/Referenzen/Logos/Logo-ISOTEC_cmyk-coated 1.png" },
   { name: "Almdorfbau", logo: "/Referenzen/Logos/Logo_Almdorfbau_Subline.png" },
   { name: "Sprügel", logo: "/Referenzen/Logos/Sprügel.png" },
-  { name: "JR Consulting", logo: "/Referenzen/Logos/JR_LOGO.png" },
+  { name: "JR Consulting", logo: "/Referenzen/Logos/JR-LOGO.png" },
   { name: "Eifeltrecker", logo: "/Referenzen/Logos/Eifelfrecker_Logo_Quadrat_Facebook.svg"}
 ]
 
