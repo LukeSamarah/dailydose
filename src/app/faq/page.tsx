@@ -6,7 +6,7 @@ const faqData = [
   {
     id: 1,
     question: "Für welche Unternehmen oder Branchen arbeitet ihr?",
-    answer: "Wir arbeiten vor allem mit mittelständischen Unternehmen, Handwerksbetrieben und Dienstleistern, die ihren Online-Auftritt professionell und authentisch gestalten möchten. Unser Fokus liegt auf B2B-Content, der Persönlichkeit zeigt. Dabei spielt die Branche keine Rolle. Entscheidend ist, dass ihr Wert auf qualitative Videoaufnahmen legt, die euer Unternehmen glaubwürdig präsentieren."
+    answer: "Wir arbeiten vor allem mit mittelständischen Unternehmen, Handwerksbetrieben und Dienstleistern, die ihren Online-Auftritt professionell und authentisch gestalten möchten. Dabei spielt die Branche keine Rolle. Entscheidend ist, dass ihr Wert auf qualitative Videoaufnahmen legt, die euer Unternehmen glaubwürdig präsentieren."
   },
   {
     id: 2,
