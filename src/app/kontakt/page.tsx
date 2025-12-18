@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function KontaktPage() {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ export default function KontaktPage() {
     company: '',
     message: ''
   })
+  const [acceptPrivacy, setAcceptPrivacy] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
@@ -20,6 +22,13 @@ export default function KontaktPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    
+    if (!acceptPrivacy) {
+      setSubmitStatus('error')
+      setErrorMessage('Bitte stimmen Sie der Datenschutzerklärung zu.')
+      return
+    }
+    
     setIsSubmitting(true)
     setSubmitStatus('idle')
     setErrorMessage('')
@@ -38,6 +47,7 @@ export default function KontaktPage() {
       if (response.ok) {
         setSubmitStatus('success')
         setFormData({ name: '', email: '', company: '', message: '' })
+        setAcceptPrivacy(false)
       } else {
         setSubmitStatus('error')
         setErrorMessage(result.error || 'Ein Fehler ist aufgetreten')
@@ -241,6 +251,25 @@ export default function KontaktPage() {
                     className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#e88906] focus:border-transparent transition-all duration-200 bg-white resize-none disabled:bg-gray-50 disabled:cursor-not-allowed"
                     placeholder="Beschreiben Sie kurz Ihr Anliegen..."
                   ></textarea>
+                </div>
+                
+                {/* Privacy Checkbox */}
+                <div className="flex items-start space-x-3">
+                  <input
+                    type="checkbox"
+                    id="privacy"
+                    checked={acceptPrivacy}
+                    onChange={(e) => setAcceptPrivacy(e.target.checked)}
+                    disabled={isSubmitting}
+                    className="mt-1 w-4 h-4 text-[#e88906] border-gray-300 rounded focus:ring-[#e88906] focus:ring-2 disabled:cursor-not-allowed"
+                  />
+                  <label htmlFor="privacy" className="text-sm text-gray-700 leading-relaxed">
+                    Ich habe die{' '}
+                    <Link href="/datenschutz" className="text-[#e88906] hover:text-[#e88906]/80 underline transition-colors">
+                      Datenschutzerklärung
+                    </Link>{' '}
+                    gelesen und stimme der Verarbeitung meiner Daten zur Kontaktaufnahme zu. *
+                  </label>
                 </div>
                 
                 <button

@@ -67,7 +67,7 @@ function FAQItem({ faq, isOpen, onToggle }: { faq: typeof faqData[0], isOpen: bo
         </div>
       </button>
       <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
-        isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        isOpen ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
       }`}>
         <div className="pb-6 pr-8">
           <p className="text-gray-700 leading-relaxed font-muli">
