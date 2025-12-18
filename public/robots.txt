@@ -1,21 +1,4 @@
 User-agent: *
 Allow: /
 
-# Block access to legal pages from search engines
-Disallow: /datenschutz
-Disallow: /impressum
-Disallow: /agb
-
-# Allow all other pages
-Allow: /
-Allow: /kontakt
-Allow: /ueber-uns
-Allow: /referenzen
-Allow: /service
-Allow: /faq
-
-# Sitemap location
 Sitemap: https://dailydoseofcontent.de/sitemap.xml
-
-# Crawl delay (optional - be nice to servers)
-Crawl-delay: 1
