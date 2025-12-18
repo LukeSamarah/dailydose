@@ -6,21 +6,21 @@ const testimonials = [
     quote: "Ich arbeite jetzt seit ca. einem Jahr im Bereich Social-Media mit Amelie sehr erfolgreich zusammen. Auf einem Vortrag bei ISOTEC hat Amelie über die Wichtigkeit von Instagram und Facebook berichtet. Das hat mich so stark angesprochen, dass ich Amelie den Auftrag für die Kampagnen bei Instagram und Facebook erteilt habe. Amelie dreht für uns Videos auf unseren Baustellen und bearbeitet Sie anschließend. Das klappt wunderbar. Die Dreharbeiten sind immer wieder Highlights bei uns. Die Zusammenarbeit macht viel Spaß und die Ergebnisse sind wunderbar. Wir sind froh von Amelie betreut zu werden.",
     author: "Henrik Rüger",
     position: "left",
-    image: "/referenzen/HR/HRv2.JPG"
+    image: "/Referenzen/HR/HRv2.JPG"
   },
   {
     id: 2,
     quote: "Die Zusammenarbeit mit Daily Dose of Content und Amelie war von absoluter Professionalität geprägt. Wir wussten zu jedem Zeitpunkt, was uns erwartet und die Produktionen, als auch die Ergebnisse nach dem Videoschnitt waren für uns nicht nur zur höchsten Zufriedenheit, sondern auch sehr erfolgreich. Durch unsere Zusammenarbeit konnten wir eine vielzahl an Leads generieren, da Amelie versteht, wie Videos aufgebaut sein müssen, damit sie zu dem gewünschten Ergebnis führen. Wir konnten unseren Invest mehrfach wieder reinholen und empfehlen die Zusammenarbeit mit Daily Dose of Content und Amelie Klein uneingeschränkt jedem mittelständischen Unternehmen weiter. Insbesondere wenn man keine inhouse Marketing-Abteilung hat, bietet sich die Dienstleistung sehr an.",
     author: "Jan Randy",
     position: "right",
-    image: "/referenzen/JR/JR.JPG"
+    image: "/Referenzen/JR/JR.JPG"
   },
   {
     id: 3,
     quote: "Amelie Klein hat uns dabei unterstützt, die Social Media-Präsenz unseres ISOTEC-Fachbetriebs von Grund auf aufzubauen. Neben der Content-Produktion (Konzept, Dreh, Schnitt, Texte) unterstützt sie uns auch beim Redaktionsplan, der laufenden Pflege der Accounts und dem Community-Management. Die Zusammenarbeit mit Frau Klein lief zu jedem Zeitpunkt reibungslos. Sie ist kreativ, zuverlässig und reagiert umgehend, wenn es mal eine Frage oder Änderung gibt. So ist die Zahl unserer Follower in den letzten Monaten stark gewachsen und wir bekommen viel positives Feedback zu unseren Inhalten. Vielen Dank!",
     author: "Charlotte Brückner",
     position: "left",
-    image: "/referenzen/CB/CB.jpg"
+    image: "/Referenzen/CB/CB.jpg"
   },
   {
     id: 4,
